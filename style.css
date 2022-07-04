@@ -1,0 +1,130 @@
+
+
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+}
+body {
+font: var(--fs-default) var(--ff-default);
+}
+:root {
+--mobile-size: 375px;
+--desktop-size: 1440px;
+--clr-primary-cyan: #2ab2af;
+--clr-primary-cyan-light: #2fcac8;
+--clr-primary-bright_yellow: #c0df34;
+--clr-neutral-light_gray: #e5eff5;
+--clr-neutral-grayish_blue: #98a6bd;
+--clr-grayish: #e6eff6;
+--fs-default: 16px;
+--ff-default: "Karla", sans-serif;
+--fw-karla_regular: 400;
+--fw-karla_bold: 700;
+--card-border: 0.5rem;
+}
+ul , li{
+    list-style: none;
+    padding: 0;
+}
+main{
+    background: var(--clr-grayish);
+    padding: 1.4rem;
+}
+.container{
+    width: 100%;
+    max-width: var(--mobile-size);
+    margin:  3rem auto;
+}
+.card-component{
+    padding: 2.8rem;
+}
+.community {
+    background: white;
+    border-radius: var(--card-border) var(--card-border) 0 0;
+}
+.community h1{
+    color: var(--clr-primary-cyan);
+    margin-bottom: 1.5rem;
+}
+.community h2{
+    color: var(--clr-primary-bright_yellow);
+    margin-bottom: 1rem;
+}
+.community p{
+    color: var(--clr-neutral-grayish_blue);
+    line-height: 1.8rem;
+}
+.subscribtion{
+    background: var(--clr-primary-cyan);
+}
+.subscribtion p ,h2{
+    color: white;
+}
+.subscribtion .cost{
+    display: flex;
+    align-items: center;
+    gap:  0.6rem;
+    margin-bottom:  0.3rem;
+
+
+}
+.subscribtion .cost h1{
+    color: white;
+}
+.subscribtion .cost p{
+    color: var(--clr-primary-cyan-light);
+}
+.subscribtion .btn{
+    text-align: center;
+    background-color: var(--clr-primary-bright_yellow);
+    border-radius: 0.3rem;
+    margin-top: 15px;
+    padding:  0.8rem 0;
+
+}
+.subscribtion button{
+    border: none;
+    background-color: var(--clr-primary-bright_yellow);
+    color:  white;
+    cursor: pointer;
+}
+.why{
+    background-color: var(--clr-primary-cyan-light);
+    border-radius: 00 var(--card-border) var(--card-border);
+
+}
+.why li{
+    color: var(--clr-neutral-light_gray);
+    font-size: 0.9rem;
+}
+.why h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+@media screen and (min-width:992px) {
+.container{
+    width: 50%;
+    max-width: var(--desktop-size);
+}
+.card-row{
+    display: flex;
+
+}
+.subscribtion{
+    width: 100%;
+    border-radius:  0 0 0 var(--card-border);
+
+}
+.why{
+    width: 100%;
+    border-radius: 0 0 var(--card-border)0;
+}
+.community h1{
+    font-size: 2rem;
+
+}
+}
